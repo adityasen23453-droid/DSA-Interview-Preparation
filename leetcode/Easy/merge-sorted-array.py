@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/merge-sorted-array/
-// Solved on: 2026-08-22T05:46:25.910Z
+// Solved on: 2026-08-22T05:46:36.087Z
 
 class Solution(object):
 

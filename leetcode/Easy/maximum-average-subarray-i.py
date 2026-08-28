@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/maximum-average-subarray-i/
-// Solved on: 2026-08-28T16:37:35.761Z
+// Solved on: 2026-08-28T16:40:25.502Z
 
 class Solution:
     def findMaxAverage(self, nums, k):

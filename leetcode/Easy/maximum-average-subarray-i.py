@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/maximum-average-subarray-i/
-// Solved on: 2026-08-29T03:05:03.774Z
+// Solved on: 2026-08-29T10:06:06.098Z
 
 class Solution:
     def findMaxAverage(self, nums, k):
@@ -12,7 +12,9 @@ class Solution:
         max_sum = window_sum
 
         for i in range(k, len(nums)):
-            window_sum += nums[i] - nums[i - k]
-            max_sum = max(max_sum, window_sum)
+            window_sum += nums[i] - nums[i-k]
+
+            if window_sum > max_sum:
+                max_sum = window_sum
 
         return float(max_sum) / k

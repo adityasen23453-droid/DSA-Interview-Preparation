@@ -4,15 +4,16 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/contains-duplicate-ii/
-// Solved on: 2026-08-31T18:15:41.382Z
+// Solved on: 2026-08-31T18:17:15.422Z
 
-class Solution():
-   def containsNearbyDuplicate(self , nums , k):
-       window = set()
-       for i in range(len(nums)):
-           if nums[i] in window:
-              return True
-           window.add(nums[i])
-           if len(window)>k:
-              window.remove(nums[i-k]) 
-       return False
+class Solution:
+    def containsNearbyDuplicate(self, nums, k):
+        last = {}
+
+        for i, num in enumerate(nums):
+            if num in last and i - last[num] <= k:
+                return True
+
+            last[num] = i
+
+        return False

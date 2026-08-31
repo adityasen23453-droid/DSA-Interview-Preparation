@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/contains-duplicate-ii/
-// Solved on: 2026-08-31T18:15:33.609Z
+// Solved on: 2026-08-31T18:15:41.382Z
 
 class Solution():
    def containsNearbyDuplicate(self , nums , k):

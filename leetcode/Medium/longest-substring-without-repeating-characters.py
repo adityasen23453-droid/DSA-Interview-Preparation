@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/longest-substring-without-repeating-characters/
-// Solved on: 2026-09-02T17:24:13.930Z
+// Solved on: 2026-09-03T15:35:06.901Z
 
 class Solution:
   def lengthOfLongestSubstring(self,s):

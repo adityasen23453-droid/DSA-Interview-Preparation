@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/longest-repeating-character-replacement/
-// Solved on: 2026-09-06T17:35:42.835Z
+// Solved on: 2026-09-09T17:40:25.997Z
 
 class Solution:
     def characterReplacement(self, s, k):

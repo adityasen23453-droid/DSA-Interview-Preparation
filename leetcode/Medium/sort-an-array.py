@@ -4,37 +4,40 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/sort-an-array/
-// Solved on: 2026-09-19T16:00:55.664Z
+// Solved on: 2026-09-19T16:05:07.550Z
 
-class Solution:
+class Solution(object):
     def sortArray(self, nums):
+        def merge_sort(nums):
+            l = len(nums)
 
-        def merge_sort(arr):
-            if len(arr) <= 1:
-                return arr
+            if l <= 1:
+                return nums
+            mid = l//2
+            left_half = nums[:mid]
+            right_half = nums[mid:]
+            left = merge_sort(left_half)
+            right = merge_sort(right_half)
+            return merge_arr(left,right)
 
-            mid = len(arr) // 2
-
-            left = merge_sort(arr[:mid])
-            right = merge_sort(arr[mid:])
-
-            return merge(left, right)
-
-        def merge(left, right):
+        def merge_arr(left,right):
             result = []
-            i = 0
-            j = 0
+            i , j =  0 , 0
+            m , n = len(left) , len(right)
 
-            while i < len(left) and j < len(right):
+            while i < m and j < n:
                 if left[i] < right[j]:
                     result.append(left[i])
-                    i += 1
+                    i+=1
                 else:
                     result.append(right[j])
                     j += 1
-
-            result += left[i:]
-            result += right[j:]
+            while i < m:
+                result.append(left[i])
+                i += 1
+            while j < n :
+                result.append(right[j])
+                j += 1
 
             return result
 

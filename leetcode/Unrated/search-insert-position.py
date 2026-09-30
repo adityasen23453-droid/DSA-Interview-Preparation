@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/search-insert-position/
-// Solved on: 2026-09-28T09:59:18.247Z
+// Solved on: 2026-09-30T13:09:38.668Z
 
 class Solution(object):
     def searchInsert(self, nums, target):

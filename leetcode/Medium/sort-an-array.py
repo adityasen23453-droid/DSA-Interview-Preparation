@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/sort-an-array/
-// Solved on: 2026-09-19T16:05:07.550Z
+// Solved on: 2026-09-30T15:48:39.406Z
 
 class Solution(object):
     def sortArray(self, nums):

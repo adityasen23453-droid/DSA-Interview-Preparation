@@ -4,7 +4,9 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/sqrtx/
-// Solved on: 2026-10-23T15:16:23.271Z
+// Solved on: 2026-10-23T15:19:05.230Z
+
+# corrected the required integer storing  logic
 
 class Solution(object):
     def mySqrt(self, x):
@@ -15,10 +17,10 @@ class Solution(object):
             mid = (left + right)//2
             req = mid * mid
             if req <= x:
-                need = mid
-                left = left + 1
+                answer = mid
+                left = mid + 1
             else :
                 right = mid - 1
-        return max(answer,need)
+        return answer
                 
         

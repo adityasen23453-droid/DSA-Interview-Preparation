@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/search-in-rotated-sorted-array/
-// Solved on: 2026-10-25T17:38:18.369Z
+// Solved on: 2026-10-26T17:40:28.240Z
 
 class Solution(object):
     def search(self, nums, target):

@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/single-element-in-a-sorted-array/
-// Solved on: 2026-10-26T17:05:32.529Z
+// Solved on: 2026-10-26T17:08:58.442Z
 
 class Solution(object):
     def singleNonDuplicate(self, nums):
@@ -20,7 +20,5 @@ class Solution(object):
             left = mid + 1
         elif mid % 2 == 1 and nums[mid] == nums[mid - 1]:
             left = mid + 1
-        elif left == right :
-            return nums[left]
         else :
             right = mid - 1

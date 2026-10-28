@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/height-checker/
-// Solved on: 2026-10-28T16:24:18.288Z
+// Solved on: 2026-10-28T16:27:42.458Z
 
 class Solution(object):
     def heightChecker(self, heights):

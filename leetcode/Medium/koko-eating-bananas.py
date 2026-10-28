@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/koko-eating-bananas/
-// Solved on: 2026-10-28T05:09:02.836Z
+// Solved on: 2026-10-28T05:09:14.891Z
 
 class Solution(object):
    def minEatingSpeed(self , piles , h):

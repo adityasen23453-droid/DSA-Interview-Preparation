@@ -4,15 +4,13 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/koko-eating-bananas/
-// Solved on: 2026-10-28T05:09:14.891Z
+// Solved on: 2026-10-28T05:11:38.401Z
 
+#With using max function
 class Solution(object):
    def minEatingSpeed(self , piles , h):
       left = 1
-      right = piles[0]
-      for i in range (len(piles)):
-          if piles[i] > right:
-             right = piles[i]
+      right = max(piles)
       while left < right :
           mid = (left + right) //2
           total_time = 0

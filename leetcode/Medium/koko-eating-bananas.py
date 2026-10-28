@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/koko-eating-bananas/
-// Solved on: 2026-10-28T05:11:38.401Z
+// Solved on: 2026-10-28T05:14:12.416Z
 
 #With using max function
 class Solution(object):
@@ -15,12 +15,8 @@ class Solution(object):
           mid = (left + right) //2
           total_time = 0
           for i in range(len(piles)):
-              if piles[i] % mid == 0 :
-                 hours = piles[i]//mid
-                 total_time = total_time + hours
-              else :
-                 hours = piles[i]//mid + 1
-                 total_time = total_time + hours
+             hours = (piles[i] + mid - 1) // mid
+             total_time = total_time + hours
           if total_time <= h:
              right = mid
           else :

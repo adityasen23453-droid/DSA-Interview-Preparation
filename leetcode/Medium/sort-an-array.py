@@ -4,7 +4,7 @@
 // Language: python
 // Verdict: Accepted
 // URL: https://leetcode.com/problems/sort-an-array/
-// Solved on: 2026-10-31T10:21:27.392Z
+// Solved on: 2026-10-31T10:24:29.391Z
 
 # Ans using merge sort 
 # time complexity O(nlog(n))
@@ -15,9 +15,9 @@ class Solution(object):
         j = 0
         temp = []
         mid =len(nums)//2
-        if len(nums) == 1 :
+        if len(nums) <= 1 :  # To stop the recursion at a single element + handles empty array
             return nums
-        left = self.sortArray(nums[:mid])
+        left = self.sortArray(nums[:mid])   #self.sortArray(nums[:mid]) recursively calls sortArray function unit the above if condition doesnt meet
         right = self.sortArray(nums[mid:])
         m = len(left)
         n = len(right)

@@ -3,7 +3,7 @@
 // Language: mysql
 // Verdict: Accepted
 // URL: https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true
-// Solved on: 2026-11-13T08:34:49.053Z
+// Solved on: 2026-11-13T08:36:59.038Z
 
 SELECT CITY, LENGTH(CITY)
 FROM STATION
